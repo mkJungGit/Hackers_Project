@@ -7,7 +7,7 @@ const closeBtn = document.querySelector('.section-left__header__button.red')
 // ------------------------------------------------------------------------------------------
 
 const back = () => {
-    location.href = 'intro.html'
+    location.href = 'index.html'
 }
 
 widgetPhoto.addEventListener('click', () => {
@@ -20,7 +20,7 @@ closeBtn.addEventListener('click', () => {
 
 // ------------------------------------------------------------------------------------------
 logoutBtn.addEventListener('click', () => {
-    location.href = 'intro.html'
+    location.href = 'index.html'
 })
 
 // ------------------------------------------------------------------------------------------
