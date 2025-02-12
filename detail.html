@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- GOOGLE FONT CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- GOOGLE ICON LINK -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="./css/newDetail.css" />
+
+        <script defer src="./js/detail.js"></script>
+        <script defer src="./js/countDown.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <header class="page__header">
+                <button class="page__header__button">
+                    <span class="material-symbols-outlined">logout</span>
+                    로그아웃
+                </button>
+            </header>
+            <div class="page__body">
+                <a href="https://blog.naver.com/2000vendetta" target="_blank" class="page__body__widget profile">
+                    <button class="button">
+                        <img src="./assets/icons/icon-contact.png" alt="" class="button__icon" />
+                        <span class="button__label">프로필</span>
+                    </button>
+                </a>
+                <div class="page__body__widget photo">
+                    <button class="button">
+                        <img src="./assets/icons/icon-photo.png" alt="" class="button__icon" />
+                        <span class="button__label">사진</span>
+                    </button>
+                </div>
+                <div class="page__body__widget" data-action="resume">
+                    <button class="button">
+                        <img src="./assets/icons/icon-keynote.png" alt="" class="button__icon" />
+                        <span class="button__label">이력서</span>
+                    </button>
+                </div>
+                <div class="page__body__widget" data-action="resume">
+                    <button class="button">
+                        <img src="./assets/icons/icon-mail.png" alt="" class="button__icon" />
+                        <span class="button__label">이메일</span>
+                    </button>
+                </div>
+            </div>
+            <div class="page__countDown">
+                <div class="page__countDown__infoBox">
+                    <span class="title">곧, 이력서 열람이 마감됩니다.</span>
+                    <span class="countDownDesc">이 기회를 놓치시면, 인재를 놓치시는 거에요!</span>
+                </div>
+                <div class="page__countDown__countDownBox"></div>
+            </div>
+
+            <!-- 사진 아이콘 클릭 시, 발생하는 다이얼로그 -->
+            <div class="page__dialog">
+                <div class="page__dialog__layout">
+                    <div class="section-left">
+                        <div class="section-left__header">
+                            <button class="section-left__header__button red"></button>
+                            <button class="section-left__header__button yellow"></button>
+                            <button class="section-left__header__button green"></button>
+                        </div>
+                        <div class="section-left__body">
+                            <div class="section-left__body__intro">
+                                <span class="label">소개</span>
+                                <div class="desc">저의 강아지입니다.</div>
+                            </div>
+                            <div class="section-left__body__stackBox">
+                                <span class="label">Skill Stack</span>
+                                <div class="stack">
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot pink"></span>
+                                        <span class="stack__row__label">HTML</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot red"></span>
+                                        <span class="stack__row__label">CSS (SCSS)</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot yellow"></span>
+                                        <span class="stack__row__label">JavaScript</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot green"></span>
+                                        <span class="stack__row__label">Vue.js</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot blue"></span>
+                                        <span class="stack__row__label">React</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-right">
+                        <div class="section-right__content">
+                            <div class="section-right__content__container">
+                                <div class="section-right__content__container__image">
+                                    <img src="./assets/images/song-yee.jpg" alt="" />
+                                </div>
+                                <div class="dataBox">
+                                    <swiper-container class="mySwiper" navigation="true"></swiper-container>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 사진 아이콘 클릭 시, 발생하는 다이얼로그 -->
+            <div class="page__dialog">
+                <div class="page__dialog__layout">
+                    <div class="section-left">
+                        <div class="section-left__header">
+                            <button class="section-left__header__button red"></button>
+                            <button class="section-left__header__button yellow"></button>
+                            <button class="section-left__header__button green"></button>
+                        </div>
+                        <div class="section-left__body">
+                            <div class="section-left__body__intro">
+                                <span class="label">소개</span>
+                                <div class="desc">저의 강아지입니다.</div>
+                            </div>
+                            <div class="section-left__body__stackBox">
+                                <span class="label">Skill Stack</span>
+                                <div class="stack">
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot pink"></span>
+                                        <span class="stack__row__label">HTML</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot red"></span>
+                                        <span class="stack__row__label">CSS (SCSS)</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot yellow"></span>
+                                        <span class="stack__row__label">JavaScript</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot green"></span>
+                                        <span class="stack__row__label">Vue.js</span>
+                                    </div>
+                                    <div class="stack__row">
+                                        <span class="stack__row__dot blue"></span>
+                                        <span class="stack__row__label">React</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-right">
+                        <div class="section-right__content">
+                            <div class="section-right__content__container">
+                                <div class="section-right__content__container__image">
+                                    <img src="./assets/images/song-yee.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 이력서, 이메일 아이콘 클릭 시, 발생하는 다이얼로그 -->
+        <div class="page__empty__dialog">
+            <div class="page__empty__dialog__layout">
+                <div class="section-empty">
+                    <button class="section-empty-main">나가기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
